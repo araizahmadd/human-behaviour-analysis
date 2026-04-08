@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Human Face Analysis Vision | Real-time Facial Intelligence</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Background Elements -->
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <div class="app-container">
+      <!-- Sidebar Navigation -->
+      <nav class="sidebar glass-panel">
+        <div class="brand">
+          <div class="brand-logo">H</div>
+          <h2>Human Face Analysis</h2>
+        </div>
+        <ul class="nav-links">
+          <li class="active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            Dashboard
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Dashboard Area -->
+      <main class="dashboard-core">
+        
+        <header class="top-header">
+          <div>
+            <h1 class="page-title">Live Behavioral Analysis</h1>
+            <p class="subtitle">Computer Vision Pipeline via FastAPI</p>
+          </div>
+          <div class="status-indicator">
+            <span class="pulse-dot"></span> System Online
+          </div>
+        </header>
+
+        <section class="feed-grid">
+          <!-- Live Camera Stream Glass Panel -->
+          <div class="video-container glass-panel">
+            <div class="panel-header">
+              <h3>Primary Optical Sensor</h3>
+              <span class="badge">LIVE (0ms latency)</span>
+            </div>
+            <div class="video-wrapper">
+               <img id="videoStream" src="http://localhost:8000/video_feed" alt="Webcam Feed" />
+               <div class="scan-line"></div>
+            </div>
+            <div class="telemetry-bar">
+               <span class="metric-label">STREAM PROTOCOL:</span> MJPEG
+               <span class="divider"></span>
+               <span class="metric-label">FRAME RES:</span> 640x480
+               <span class="divider"></span>
+               <span class="metric-label">AI MODELS RUNNING:</span> 4
+            </div>
+          </div>
+
+
+        </section>
+
+      </main>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
