@@ -1,13 +1,13 @@
-# Human Face Analysis - Real-time Facial Analysis Dashboard 🍪
+# Human Face Analysis - Real-time Facial Analysis Dashboard 
 
 A modern, high-performance web application designed to demonstrate multi-modal computer vision capabilities including gaze tracking, lip movement analysis, head positioning, and distance estimation. 
 
 Built with **MediaPipe**, **OpenCV**, **FastAPI**, and **Vite**.
 
-## 📸 Overview
+## Overview
 This project transforms a set of computer vision python scripts into a stunning, production-ready Proof of Concept. The backend processes a live camera feed via OpenCV and MediaPipe, overlays the detection metrics, and serves an MJPEG stream over HTTP to a beautiful, glassmorphism-styled frontend UI.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Set up the Environment (Virtual Environment)
 It is highly recommended (especially on macOS) to use a virtual environment so you don't pollute your system Python.
