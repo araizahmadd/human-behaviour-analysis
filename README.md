@@ -38,7 +38,7 @@ npm run dev
 ```
 *The application should now be live on `http://localhost:5173`!*
 
-## 📁 Project Architecture
+##  Project Architecture
 - `core/`: The computer vision intelligence powered by MediaPipe. Contains independent analyzers for face, gaze, lips, and distance.
 - `api/`: The FastAPI backend serving the `video_feed` endpoint.
 - `frontend/`: A Vite-powered Vanilla JS application featuring a responsive, neon-infused dark mode dashboard.
